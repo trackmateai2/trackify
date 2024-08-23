@@ -18,15 +18,36 @@
             
               <p class="hacker">Hacker Portal</p>
 
-    <form class="form">
+      <form class="form">
         <input type="email" class="input" placeholder="Email" id="email">
         <input type="password" class="input" placeholder="Password" id="password">
         <p class="page-link">
           <span class="page-link-label">Forgot Password?</span>
         </p>
-        <button class="form-btn" type="button" onClick="signInFirebase()">Log in</button>
+        <button class="form-btn" type="button" onClick="Login()">Log in</button>
       </form>
 
+
+
+        <script>
+
+                function Login(){
+
+                       email=document.getElementById("email").value;
+                       password=document.getElementById("password").value;
+
+                       if(email=="gmasele15@gmail.com" && password=="Masele"){
+                                window.location.href=("dashboard.html");
+                       }
+                        else{
+                          alert("Wrong credentialS...FUCK OFF!");
+                        }
+
+                }
+
+        </script>
+
+    
 
 
 
